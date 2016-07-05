@@ -17,3 +17,15 @@ function lastChar (string) {
 console.log(lastChar(""));
 console.log(lastChar("Hello!"));
 console.log(lastChar("1994"));
+
+/* Write a function that takes a string and a number, and returns 
+the character at the position represented by the number. The indexing of 
+number should start at 0. */
+
+function charAtNumber (string, number) {
+    return string[number];
+}
+
+console.log(charAtNumber("", 0));
+console.log(charAtNumber("Kash", 2));
+console.log(charAtNumber("1994", 1));
