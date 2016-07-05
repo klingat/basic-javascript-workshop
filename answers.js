@@ -174,3 +174,21 @@ console.log(longestWord("Dinosaurs has the same amount of letters as bumblebee")
 
 
 
+/* Write a function that takes a phrase, and returns the same phrase with every 
+word capitalized. For example, if you pass your function "hello world", it 
+should return “Hello World” and if you pass it “HELLO WORLD” or 
+even "HeLLo WoRLD", it will also return "Hello World". Test your function of 
+a few inputs. */
+function capitalizedPhrase (str) {
+    var words = str.toLowerCase().split(" ");
+    var i = 0;
+    for (var i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].substring(1);
+    }
+    return words.join(" ");
+}
+
+console.log(capitalizedPhrase("heLlO everYone"));
+console.log(capitalizedPhrase("THIS WAS DIFFICULT"));
+console.log(capitalizedPhrase("la la la"));
+
