@@ -200,7 +200,7 @@ function largestNumber (arr) {
     var i = 0;
     for (i=0; i < arr.length; i++) {
         if (arr[i] > largestNum) {
-            largestNum = arr[i]
+            largestNum = arr[i];
         }
     }
     return largestNum;
@@ -210,3 +210,28 @@ function largestNumber (arr) {
 console.log(largestNumber([1, 2, 10, 4, 8, 5]));
 console.log(largestNumber([300, 999, 1000]));
 console.log(largestNumber([0, -2, 1, 0]));
+
+
+/* Write a function that takes an array, and returns a filtered array. 
+The filtered array should only contain the truthy values from the initial array. 
+Hint: there is an array method called filter that can help you with this :) */
+function filteredArray (arr) {
+    var filtered = arr.filter(function(ele){
+     if(ele) {  //checks if truthy
+         return ele;
+     }
+ })
+ return filtered;
+}
+
+
+console.log(filteredArray([true, false, "hello", 0, ""]));
+// Notes:
+/* var test = [true, false, 'hello', "", 0, 45].filter(function(ele){
+    if(ele) {
+        return ele;
+    }
+}) */
+
+//true, 1, "hello"
+//false, null, 0, undefined, NaN, ""
