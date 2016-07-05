@@ -76,3 +76,19 @@ console.log(twoNumbersAndString(8, 4, "subtract"));
 console.log(twoNumbersAndString(8, 4, "mult"));
 console.log(twoNumbersAndString(8, 4, "div"));
 console.log(twoNumbersAndString(8, 4, "modulo"));
+
+
+/* Write a function that takes a string and a number, and returns the string 
+repeated that many number of times. */
+function sameStringManyTimes (str, num) {
+    var i = 0;
+    
+    while (i < num) {
+        console.log(str);
+        i++;
+    }
+}
+
+sameStringManyTimes("Hi!", 5);
+sameStringManyTimes("Kash", 3);
+sameStringManyTimes("8", 8);
