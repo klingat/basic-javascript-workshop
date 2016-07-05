@@ -134,3 +134,22 @@ console.log(reverseString(""));
 
 // Below is the short way shown by Codrin using methods
 //console.log('hello'.split("").reverse().join(''));
+
+
+/* Write a function that takes a number and returns the factorial of a number. 
+The factorial of 5 is 5x4x3x2x1. The factorial of 0 is 1. */
+function factorial(num) {
+    if (num === 0) {
+        return 1;
+    }
+    var operation = 1; // Note to self: don't forget to define variables
+    for (var i = 1; i <= num; i++) {
+        operation = operation * i;
+    }
+    return operation;
+}
+
+console.log(factorial(0));
+console.log(factorial(4));
+console.log(factorial(-5));
+
