@@ -153,3 +153,24 @@ console.log(factorial(0));
 console.log(factorial(4));
 console.log(factorial(-5));
 
+
+/* Write a function that takes a phrase as a string, and returns the longest 
+word in that phrase. If the phrase contains more than one such word, return the
+first occurrence. */
+function longestWord (phrase) {
+    var words = phrase.split(" ");
+    var maxLength = "";
+    
+    for (var i = 0; i < words.length; i++){
+        if (words[i].length > maxLength.length) {  //because we're comparing a number to a number make sure to convert to .length
+            maxLength = words[i];
+        }
+    }
+    return maxLength;
+}
+
+console.log(longestWord("I live in Montreal."));
+console.log(longestWord("Dinosaurs has the same amount of letters as bumblebee"));
+
+
+
