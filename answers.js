@@ -38,4 +38,12 @@ console.log(addTwoNumbers(5, "dog"));
 /* When you pass something other than a number to the function, 
 the two inputs concatenate. */
 
+// Write a function that takes two numbers and multiplies them together.
+function multiplyTwoNumbers (num1, num2) {
+    return num1 * num2;
+}
 
+console.log(multiplyTwoNumbers(1, 2));
+console.log(multiplyTwoNumbers(99, 650));
+console.log(multiplyTwoNumbers(5, "dog"));
+// When you pass something other than a number to the function, it outputs NaN.
