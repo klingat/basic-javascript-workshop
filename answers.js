@@ -235,3 +235,18 @@ console.log(filteredArray([true, false, "hello", 0, ""]));
 
 //true, 1, "hello"
 //false, null, 0, undefined, NaN, ""
+
+
+/* Write a function that takes an array of numbers, and returns the sum of 
+all the numbers in the array. */
+function sumOfAnArray (arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+    return sum;
+}
+
+console.log(sumOfAnArray([1, 2, 3, 4, 5]));
+console.log(sumOfAnArray([0, 0, 0]));
+console.log(sumOfAnArray([20, 30, 40, 60]));
