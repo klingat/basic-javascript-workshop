@@ -250,3 +250,27 @@ function sumOfAnArray (arr) {
 console.log(sumOfAnArray([1, 2, 3, 4, 5]));
 console.log(sumOfAnArray([0, 0, 0]));
 console.log(sumOfAnArray([20, 30, 40, 60]));
+
+
+
+/* Write a function that takes two arrays, and returns an array of all elements 
+that are only in one array. For example, with [1,2,3] and [1,2,4,5] the function 
+should return [3,4,5]. Test your function on different inputs. Hint: you should 
+look up array methods indexOf and slice. */
+function symmetricDifference(arr1, arr2) {
+  var result = [];
+  for (var i = 0; i < arr1.length; i++) {
+    if (arr2.indexOf(arr1[i]) === -1) { // the -1 is the default functionality of indexOf because it does not exist, an element cannot be at a negative position in an array.
+      result.push(arr1[i]);
+    }
+  }
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) === -1) {
+      result.push(arr2[i]);
+    }
+  }
+  return result;
+}
+
+console.log(symmetricDifference([1, 2, 3], [1, 2, 4, 5]));
+console.log(symmetricDifference([0, 4, 5, 8, 66, 100], [100, 4, 5, 66]));
