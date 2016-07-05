@@ -192,3 +192,21 @@ console.log(capitalizedPhrase("heLlO everYone"));
 console.log(capitalizedPhrase("THIS WAS DIFFICULT"));
 console.log(capitalizedPhrase("la la la"));
 
+
+/* Write a function that takes an array and returns the largest number of the 
+array. Test your function on a few inputs. */
+function largestNumber (arr) {
+    var largestNum = 0;
+    var i = 0;
+    for (i=0; i < arr.length; i++) {
+        if (arr[i] > largestNum) {
+            largestNum = arr[i]
+        }
+    }
+    return largestNum;
+}
+
+
+console.log(largestNumber([1, 2, 10, 4, 8, 5]));
+console.log(largestNumber([300, 999, 1000]));
+console.log(largestNumber([0, -2, 1, 0]));
