@@ -274,3 +274,20 @@ function symmetricDifference(arr1, arr2) {
 
 console.log(symmetricDifference([1, 2, 3], [1, 2, 4, 5]));
 console.log(symmetricDifference([0, 4, 5, 8, 66, 100], [100, 4, 5, 66]));
+
+
+/* Mini Challenge: write a function that takes an array and a function as 
+arguments. The function should return a new array that maps every element of the 
+input array by passing it through the function you received. You are not 
+allowed to use Array.map for this challenge, otherwise it would be too easy:) */
+
+function maps (arr, func) {
+    var newArray = [];
+    for (var i = 0; i < arr.length; i++) {
+        newArray.push(func(arr[i]));
+        }
+        return newArray;
+    }
+    
+console.log(maps(["Kasia", "Claudia", "Manfred", "Zuza"], firstChar ));
+
