@@ -289,5 +289,5 @@ function maps (arr, func) {
         return newArray;
     }
     
-console.log(maps(["Kasia", "Claudia", "Manfred", "Zuza"], firstChar ));
+console.log(maps(["Kasia", "Claudia", "Manfred", "Zuza"], firstChar));
 
